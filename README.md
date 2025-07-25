@@ -3,10 +3,12 @@
 **RubiSolve - 2025** is a modern, dark-themed frontend interface for solving Rubik’s Cubes using algorithmic logic. It provides an intuitive, user-friendly interface for experimenting with different cube models and algorithms — no command-line knowledge required.
 
 ---
+
 ### 🚀 Live Demo
 
 Check out the live version of **RubiSolve - 2025** here:  
-🔗 (https://rubi-solve-2025.vercel.app/)
+🔗 [https://rubi-solve-2025.vercel.app/](https://rubi-solve-2025.vercel.app/)
+
 ---
 
 ## 🌟 Features
@@ -24,7 +26,7 @@ Check out the live version of **RubiSolve - 2025** here:
 
 ## 🧑‍💻 How to Use
 
-### Option 1: Frontend Interface (No Setup Required)
+### ✅ Option 1: Frontend Interface (No Setup Required)
 
 1. Open `index.html` in your web browser.
 2. Configure your settings:
@@ -37,9 +39,9 @@ Check out the live version of **RubiSolve - 2025** here:
 
 ---
 
-### Option 2: Command Line Interface (C++)
+### 🖥️ Option 2: Command Line Interface (C++)
 
-You can still use the original command-line version of the solver.
+Use the original backend logic directly via the terminal.
 
 #### 🔧 Compile and Run:
 ```bash
@@ -47,14 +49,14 @@ g++ main.cpp models/cube.cpp -o a.exe
 ./a.exe
 ```
 
-#### 📦 Batch File (Alternative):
+#### 📦 Using the Batch File (Quick Run):
 ```bash
 ./run.bat
 ```
 
-Follow on-screen prompts to:
-- Select cube model and algorithm
-- Set shuffle moves and depth
+Follow the terminal prompts to:
+- Select a cube model and algorithm
+- Set number of shuffle moves and depth
 
 ---
 
@@ -62,15 +64,19 @@ Follow on-screen prompts to:
 
 - **HTML5**
 - **CSS3** (Flexbox, Grid)
-- **JavaScript** (Vanilla JS only)
-- **C++** (Backend solver)
+- **JavaScript** (Vanilla JS)
+- **C++** (Backend solving logic)
 
 ---
 
-## 🚀 Future Improvements
+## 🚧 Future Improvements
 
-- 🔄 Step-by-step animation of solution moves
+- 🔄 Step-by-step animation of cube-solving moves
 - 🧱 3D cube rendering using **Three.js**
-- 📲 Mobile-responsive design
-- ✍️ Manual input of cube state
+- 📲 Mobile-responsive UI
+- ✍️ Manual cube state input support
 - 🌗 Dark/Light theme toggle
+
+---
+
+Feel free to fork, star, and contribute to this project!

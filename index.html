@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RubiSolve - 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>RubiSolve - 2025</h1>
+        </header>
+        
+        <main>
+            <div class="settings-panel">
+                <div class="setting-group">
+                    <h2>Cube Model</h2>
+                    <div class="options">
+                        <button class="option selected" data-value="1">Cube3d</button>
+                        <button class="option" data-value="2">Cube1d</button>
+                        <button class="option" data-value="3">Cubebit</button>
+                    </div>
+                </div>
+                
+                <div class="setting-group">
+                    <h2>Solving Algorithm</h2>
+                    <div class="options">
+                        <button class="option" data-value="1">DFS</button>
+                        <button class="option" data-value="2">BFS</button>
+                        <button class="option" data-value="3">IDDFS</button>
+                        <button class="option selected" data-value="4">IDASTAR</button>
+                    </div>
+                </div>
+                
+                <div class="setting-group">
+                    <h2>Shuffle Moves</h2>
+                    <input type="range" id="shuffle-moves" min="1" max="20" value="5" class="slider">
+                    <span id="shuffle-value">5</span>
+                </div>
+                
+                <div class="setting-group">
+                    <h2>Search Depth</h2>
+                    <input type="range" id="search-depth" min="1" max="20" value="5" class="slider">
+                    <span id="depth-value">5</span>
+                </div>
+                
+                <div class="actions">
+                    <button id="solve-btn" class="action-btn">Solve Cube</button>
+                    <button id="reset-btn" class="action-btn secondary">Reset</button>
+                </div>
+            </div>
+            
+            <div class="visualization-panel">
+                <div class="cube-state">
+                    <div class="cube-container">
+                        <h3>Original Cube</h3>
+                        <div class="cube-display" id="original-cube">
+                            <!-- Cube visualization will be rendered here -->
+                            <div class="cube-placeholder">Press Solve to start</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cube-container">
+                        <h3>Solved Cube</h3>
+                        <div class="cube-display" id="solved-cube">
+                            <!-- Solved cube visualization will be rendered here -->
+                            <div class="cube-placeholder">Solution will appear here</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-panel">
+                    <h3>Solution Moves</h3>
+                    <div id="solution-moves" class="moves-container">
+                        <div class="placeholder-text">Solution moves will appear here</div>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-label">Total Moves:</span>
+                            <span class="stat-value" id="total-moves">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Time:</span>
+                            <span class="stat-value" id="solve-time">0ms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Rubik's Cube Solver - Dark Mode Frontend</p>
+        </footer>
+    </div>
+    
+    <div id="loading-overlay" class="hidden">
+        <div class="spinner"></div>
+        <p>Solving cube...</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -6,7 +6,7 @@
 ### 🚀 Live Demo
 
 Check out the live version of **RubiSolve - 2025** here:  
-🔗 [[https://your-deployed-url.com](https://your-deployed-url.com)](https://rubi-solve-2025.vercel.app/)
+🔗 (https://rubi-solve-2025.vercel.app/)
 ---
 
 ## 🌟 Features

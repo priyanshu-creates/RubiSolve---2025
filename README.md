@@ -3,6 +3,11 @@
 **RubiSolve - 2025** is a modern, dark-themed frontend interface for solving Rubik’s Cubes using algorithmic logic. It provides an intuitive, user-friendly interface for experimenting with different cube models and algorithms — no command-line knowledge required.
 
 ---
+### 🚀 Live Demo
+
+Check out the live version of **RubiSolve - 2025** here:  
+🔗 [[https://your-deployed-url.com](https://your-deployed-url.com)](https://rubi-solve-2025.vercel.app/)
+---
 
 ## 🌟 Features
 
